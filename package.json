@@ -1,0 +1,30 @@
+{
+  "name": "recurio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A local-first spaced repetition application.",
+  "type": "module",
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": "eslint --max-warnings=0",
+    "*.{js,ts,tsx,json,md}": "prettier --check"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.13.0",
+    "eslint-config-prettier": "^10.1.8",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.6.0",
+    "prettier": "^3.9.10",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.72.0",
+    "vitest": "^5.0.5"
+  }
+}
